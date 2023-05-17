@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="597.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.damian.chatapp.controller.ClientController">
+   <children>
+      <JFXTextArea fx:id="clientTextArea" layoutX="52.0" layoutY="63.0" prefHeight="390.0" prefWidth="745.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></JFXTextArea>
+      <JFXTextField fx:id="clientField" layoutX="61.0" layoutY="524.0" onAction="#clientOnAction" prefHeight="31.0" prefWidth="657.0" promptText="Type a message!">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="clientSend" buttonType="RAISED" layoutX="756.0" layoutY="524.0" onAction="#clientOnAction" style="-fx-background-color: lightgreen;" text="SEND.">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></JFXButton>
+      <Label fx:id="l1" layoutX="354.0" layoutY="14.0" prefHeight="49.0" prefWidth="102.0" text="CLIENT." underline="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
