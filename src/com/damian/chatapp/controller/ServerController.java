@@ -66,6 +66,7 @@ public class ServerController implements Initializable {
     }
 
     public void serverOnAction(ActionEvent actionEvent) {
+        serverTextArea.appendText("\nME : " + serverField.getText());
         try {
             dos.writeUTF(serverField.getText());
             dos.flush();

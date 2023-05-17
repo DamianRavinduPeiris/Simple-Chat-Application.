@@ -55,7 +55,9 @@ public class ClientController implements Initializable {
 
 
     public void clientOnAction(ActionEvent actionEvent) {
+        clientTextArea.appendText("ME : "+clientField.getText() + "\n");
         try {
+
             dos.writeUTF(clientField.getText());
             dos.flush();
             clientField.clear();
